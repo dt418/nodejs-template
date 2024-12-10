@@ -9,5 +9,7 @@ const addErrorToRequestLog: ErrorRequestHandler = (err, _req, res, next) => {
   res.locals.err = err;
   next(err);
 };
-
-export default () => [unexpectedRequest, addErrorToRequestLog];
+const errorMiddleware = () => {
+  return [unexpectedRequest, addErrorToRequestLog];
+};
+export default errorMiddleware();
