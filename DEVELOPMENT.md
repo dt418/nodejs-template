@@ -25,11 +25,14 @@ This document outlines the development practices and guidelines for this project
 
 ## 📝 Code Style Guidelines
 
-- ✨ Use ES6+ features when possible
-- 🎨 Follow the existing code formatting style
+- ✨ Use TypeScript and ES6+ features
+- 🎨 Code formatting is handled by Biome
 - 📋 Use meaningful variable and function names
-- 💭 Add comments for complex logic
+- 💭 Add JSDoc comments for functions and complex logic
 - 🎯 Keep functions small and focused
+- 🔒 Use strict TypeScript configurations
+- ⚡ Follow middleware best practices
+- 🧪 Maintain high test coverage
 
 ## 🌿 Git Workflow
 
@@ -38,11 +41,20 @@ This document outlines the development practices and guidelines for this project
    git checkout -b feature/your-feature-name
    ```
 
-2. Make your changes and commit them
+2. Make your changes and commit them (commits are linted)
    ```bash
    git add .
-   git commit -m "descriptive commit message"
+   git commit -m "type(scope): descriptive commit message"
    ```
+
+   Commit types:
+   - feat: New feature
+   - fix: Bug fix
+   - docs: Documentation changes
+   - style: Code style changes
+   - refactor: Code refactoring
+   - test: Adding or updating tests
+   - chore: Maintenance tasks
 
 3. Push your changes and create a pull request
    ```bash
@@ -51,9 +63,11 @@ This document outlines the development practices and guidelines for this project
 
 ## 🧪 Testing
 
-- ✅ Write tests for new features
+- ✅ Write unit tests for new features using Jest
 - 🔍 Ensure all tests pass before submitting PR
 - ⚡ Run tests using `npm test` or `yarn test`
+- 📊 Aim for good test coverage
+- 🔬 Write integration tests for middleware
 
 ## 👥 Code Review Process
 

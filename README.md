@@ -12,12 +12,16 @@ A modern Node.js project template with best practices and development setup.
 
 ## ✨ Features
 
-- 🔥 Modern JavaScript/Node.js setup
-- 📚 Development best practices
-- 🛠️ Easy to customize and extend
+- 🔥 Modern JavaScript/Node.js setup with TypeScript support
+- 📚 Development best practices and strict type checking
+- 🛠️ Vite for fast development and optimized builds
 - 📦 Comprehensive package management
-- 🧪 Testing setup included
-- 🔍 Code quality tools configured
+- 🧪 Testing setup with Jest
+- 🔍 Code quality tools: ESLint, Prettier, and Biome
+- 🪝 Git hooks with Husky and commitlint
+- 🐳 Docker support for containerization
+- ⚡ Fast and efficient middleware handling
+- 🔒 Error handling middleware included
 
 ## 🔧 Prerequisites
 
